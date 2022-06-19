@@ -27,7 +27,8 @@ namespace UDPListener.Api.Controllers
                 {
                     MessageId = m.MessageId,
                     MessageText = m.MessageText,
-                    Date = m.Date
+                    Date = m.Date,
+                    IPAddressId = m.IPAddress.IP
                 }).ToList();
             }
             catch (Exception)
